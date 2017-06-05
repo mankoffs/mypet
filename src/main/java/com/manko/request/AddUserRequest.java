@@ -1,8 +1,5 @@
 package com.manko.request;
 
-/**
- * Created by smanko on 5/30/2017.
- */
 public class AddUserRequest {
     private String name;
     private String surname;

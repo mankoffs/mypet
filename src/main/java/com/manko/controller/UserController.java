@@ -1,6 +1,6 @@
 package com.manko.controller;
 
-import com.manko.entity.User;
+import com.manko.common.User;
 import com.manko.repository.UserRepository;
 import com.manko.request.AddUserRequest;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,8 +31,7 @@ public class UserController {
     @RequestMapping(method = RequestMethod.POST)
     public void addUser(@RequestBody AddUserRequest addUserRequest){
         User user = new User();
-        user.setName(addUserRequest.getName());
-        user.setSurname(addUserRequest.getSurname());
+        user.setLastName(addUserRequest.getSurname());
         userRepository.save(user);
     }
 }
