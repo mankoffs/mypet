@@ -22,7 +22,7 @@ public class User {
 
     @Length(min = 3, message = "*Your password must have at least 3 characters")
     @NotEmpty(message = "*Please provide your password")
-    @Transient
+    //@Transient
     private String password;
 
     @Column(name="first_name")

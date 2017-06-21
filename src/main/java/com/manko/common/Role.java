@@ -14,8 +14,8 @@ public class Role {
     private int id;
 
     @Column(name="role")
-    @Enumerated(EnumType.STRING)
-    private Roles role;
+    //@Enumerated(EnumType.STRING)
+    private String role;
 
     public int getId() {
         return id;
@@ -25,11 +25,11 @@ public class Role {
         this.id = id;
     }
 
-    public Roles getRole() {
+    public String getRole() {
         return role;
     }
 
-    public void setRole(Roles role) {
+    public void setRole(String role) {
         this.role = role;
     }
 }
